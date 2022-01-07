@@ -12,7 +12,7 @@ For a complete example, see examples/complete.
   }
 
 module "alb" {
-  source          = "git@gitlab.cmacgm.com:cloud-devops/terraform-modules/alb.git//alb?ref=v3.1.0"
+  source          = "git@gitlab.acme.com:cloud-devops/terraform-modules/alb.git//alb?ref=v3.1.0"
   namespace       = module.naming.namespace
   domain_zone     = module.network.domain_zone_name
   vpc_id          = module.network.vpc_id

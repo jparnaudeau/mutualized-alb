@@ -12,7 +12,7 @@ For a complete example, see examples/complete.
   }
 
 module "ingress_target" {
-  source               = "git@gitlab.cmacgm.com:cloud-devops/terraform-modules/alb.git//alb-ingress-target-rules?ref=v3.1.0"
+  source               = "git@gitlab.acme.com:cloud-devops/terraform-modules/alb.git//alb-ingress-target-rules?ref=v3.1.0"
   alb_loadbalancer_arn = module.example_alb.load_balancer_arn
   target_group_name    = format("tg-%s-%s", "api", var.product_name)
   target_group_port    = var.target_group_port
@@ -22,7 +22,7 @@ module "ingress_target" {
   health_check         = var.health_check
   listener_conditions = [
     {
-      host_header = [format("%s-%s.*.cmacgm.com", "api", var.product_name)]
+      host_header = [format("%s-%s.*.acme.com", "api", var.product_name)]
     },
   ]
 }

@@ -19,7 +19,7 @@ terraform {
      key    = "ingress-alb/terraform.tfstate"
      region = "eu-west-3"
 
-     #dynamodb_table = "cmacgm-test-locks"
+     #dynamodb_table = "acme.com-test-locks"
      #encrypt        = true
    }
 }

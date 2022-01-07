@@ -9,7 +9,7 @@ For a complete example, see examples/complete.
 ```hcl
 
 module "example_ingress_listener" {
-  source                = "git@gitlab.cmacgm.com:cloud-devops/terraform-modules/alb.git//alb-ingress-listener?ref=v3.1.0"
+  source                = "git@gitlab.acme.com:cloud-devops/terraform-modules/alb.git//alb-ingress-listener?ref=v3.1.0"
   namespace             = module.naming.namespace
   alb_loadbalancer_arn  = module.example_alb.load_balancer_arn
   alb_security_group_id = module.example_alb.alb_security_group_id

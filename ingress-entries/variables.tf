@@ -17,13 +17,6 @@ variable "product_name" {
   type        = string
 }
 
-/*
-variable "application" {
-  description = "Application"
-  type        = string
-}
-*/
-
 variable "application_short_name" {
   description = "Application Short name (used in alb name)"
   type        = string
@@ -51,27 +44,6 @@ variable "owner" {
 # ALB Attributes
 # ===========================================================
 
-/*
-variable "alb_loadbalancer_arn" {
-  type        = string
-  description = "The LoadBalancer ARN"
-}
-
-variable "alb_alias_fqdn" {
-  type        = string
-  description = "The ALB Alias FQDN to use for creating Alias for the Service"
-}
-
-variable "alb_alias_zone_id" {
-  type        = string
-  description = "The ALB Alias Zone_id where it is created"
-}
-
-variable "alb_listener_arn" {
-  type          = string
-  description   = "The Listener loadBalancer ARN"
-}
-*/
 
 variable "alb_listener_port" {
   type          = number

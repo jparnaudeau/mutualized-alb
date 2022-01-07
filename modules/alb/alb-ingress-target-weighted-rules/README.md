@@ -37,14 +37,14 @@ ingress_target = [
   }
 
 module "ingress_target" {
-  source               = "git@gitlab.cmacgm.com:cloud-devops/terraform-modules/alb.git//alb-ingress-target-rules?ref=v3.1.0"
+  source               = "git@gitlab.acme.com:cloud-devops/terraform-modules/alb.git//alb-ingress-target-rules?ref=v3.1.0"
   listener_arn         = data.aws_lb_listener.selected.arn
   ingress_target       = var.ingress_target
   action               = var.action
   vpc_id               = module.network.vpc_id
   listener_conditions = [{
       host_header = [{  
-        values = [format("%s-%s.*.cmacgm.com", module.naming.short_description, module.naming.product_name)] 
+        values = [format("%s-%s.*.acme.com", module.naming.short_description, module.naming.product_name)] 
       }]
   },]
   tags = module.naming.tags

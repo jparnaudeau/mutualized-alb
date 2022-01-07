@@ -4,7 +4,7 @@ application_short_name = "ingress"
 product_name           = "network-ingress"
 short_description      = "alb"
 costcenter             = "XYZ"
-owner                  = "ext.jparnaudeau@cma-cgm.com"
+owner                  = "jparnaudeau@ippon.fr"
 
 # informations for the domain 
 domain_name = "sbx.aws.ippon.fr"

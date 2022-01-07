@@ -13,8 +13,8 @@ This terraform module is designed to generate consistent label names and tags fo
 
 <p align="center">
 
-<a href="https://gitlab.cmacgm.com/cloud-devops/terraform-modules/naming/-/commits/master">
-  <img src="https://gitlab.cmacgm.com/cloud-devops/terraform-modules/naming/badges/master/pipeline.svg" alt="pipeline status">
+<a href="https://gitlab.acme.com/cloud-devops/terraform-modules/naming/-/commits/master">
+  <img src="https://gitlab.acme.com/cloud-devops/terraform-modules/naming/badges/master/pipeline.svg" alt="pipeline status">
 </a>
 
 <a href="https://www.terraform.io">
@@ -63,7 +63,7 @@ let's take the following usage code snipet, for naming and tagging of rds postgr
 ```hcl
 
 module "naming" {
-  source      = "git@gitlab.cmacgm.com:cloud-devops/terraform-modules/naming.git?ref=v1.0.0"
+  source      = "git@gitlab.acme.com:cloud-devops/terraform-modules/naming.git?ref=v1.0.0"
   environment         = var.environment
   product_name        = var.product_name
   short_description   = var.short_description
